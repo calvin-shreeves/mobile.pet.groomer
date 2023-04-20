@@ -20,9 +20,10 @@
     <section class="header">
       <nav>
         <div class="logo">
-          <h1><i class="fa-solid fa-paw"></i> Dog Grooming</h1>
+          <h1><i class="fa-solid fa-paw"></i> Mobile Pet Grooming</h1>
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">BOOKING</a></li>
@@ -30,18 +31,114 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
-        <h1>Travling Mobile Groomer</h1>
+        <h1>Mobile Pet Groomer</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie a
-          iaculis at erat pellentesque adipiscing commodo. Pellentesque habitant
-          morbi tristique senectus. Curabitur gravida arcu ac tortor dignissim
-          convallis.
+          My goal is to always provide a customized grooming experience for
+          every client i groom as every dog's/cat's needs vary from pet to pet.
+          Currently i have 11 years of grooming experience, a new mobile
+          grooming business providing in-home services for dogs, along with
+          certication in Pet CPR, Aromatherapy for Dogs.
         </p>
         <a href="" class="hero-btn">BOOK NOW</a>
       </div>
     </section>
+
+    <!-- <section class="services">
+      <h1>Services</h1>
+      <p>
+        I offer a wide range of grooming services that fit the needs of each
+        client.
+      </p>
+      <div class="row">
+        <div class="service-col">
+          <div class="layer"></div>
+          <img src="./assets/henry1.jpg" />
+          <div>
+            <h3>Grooming</h3>
+            <p>
+              Dematting, Cutting and Trimming, Bathing, Blow drying, Nail
+              Cutting and Oral Care.
+            </p>
+          </div>
+        </div>
+        <div class="service-col">
+          <img src="./assets/henrywash.jpg" />
+          <div>
+            <h3>Bathing</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.<br /><br />
+              incididunt ut labore et dolore magna aliqua. Molestie a iaculis at
+              erat pellentesque adipiscing commodo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="services">
+      <h1>Services</h1>
+      <p>
+        I offer a wide range of grooming services that fit the needs of each
+        client.
+      </p>
+      <div class="row">
+        <div class="service-col2">
+          <div>
+            <h3>Bathing</h3>
+            <img src="./assets/henrywash.jpg" />
+            <h3>Bathing service includes</h3>
+            <ul>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Shampooing</li>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Conditioning</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-col2">
+          <div>
+            <h3>Grooming</h3>
+            <img src="./assets/henry1.jpg" />
+            <h3>My grooming services include:</h3>
+            <ul>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Dematting</li>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Cutting & Trimming</li>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Bathing</li>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Blow drying</li>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Nail Cutting</li>
+              <li><i class="fa-solid fa-paw"></i></li>
+              <li>Oral Care</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p></p>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="row">
+        <div><p>Call or Text now to schedule</p></div>
+        <p>415-605-6037</p>
+      </div>
+    </section>
+    <!--JavaScript for Toggle Menu-->
+    <script>
+      const navLinks = document.getElementById("nav-links");
+      function showMenu() {
+        navLinks.style.right = 0;
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
